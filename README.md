@@ -4,22 +4,22 @@ Implemented Go-back-N automatic repeat request (ARQ) and Selective Repeat ARQ pr
 
 #### Creating and configuring virtual machines
 	
-	vagrant up
+>vagrant up
    
    This will boot both the server and client machines
 
 #### SSH into virtual machines
 	
-	vagrant ssh reliableUDPServer
-	vagrant ssh reliableUDPClient
+>vagrant ssh reliableUDPServer
+>vagrant ssh reliableUDPClient
    
 #### Compile the code
 	
-	make
+>make
 
 #### To run reliable UDP server:
 
-  `./Server port advertised_window`
+>./Server port advertised_window
 
 The server accepts the following command-line arguments:
 
@@ -29,7 +29,7 @@ advertised_window: the number of bytes server is allowed to send before waiting 
 
 #### To run reliable UDP client:
 
-  `./Client server_host_name port file_name advertised_window`
+>./Client server_host_name port file_name advertised_window
 
 The client accepts the following command-line arguments:
 
